@@ -32,8 +32,8 @@
 		}
 	},
 	"autoload-dev": {
-		"psr-0": {
-			"couchbasetest": "test"
+		"psr-4": {
+			"couchbasetest\\": "test"
 		}
 	}
 }
