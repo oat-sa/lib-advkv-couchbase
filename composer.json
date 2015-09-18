@@ -26,9 +26,14 @@
 		"php" : ">=5.3.2"
 	},
 	"minimum-stability" : "dev",
-    "autoload" : {
-        "psr-4" : {
-            "oat\\couchbase\\" : "src/"
-        }
-    }
+	"autoload" : {
+		"psr-4" : {
+			"oat\\couchbase\\" : "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-0": {
+			"couchbasetest": "test"
+		}
+	}
 }
