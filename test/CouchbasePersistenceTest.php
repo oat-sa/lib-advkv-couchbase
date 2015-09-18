@@ -95,7 +95,8 @@ class CouchbasePersistenceTest extends GenerisPhpUnitTestRunner{
             ->setMethods( array('_getCluster') )
             ->getMock();
 
-        $mock->method('_getCluster')->willReturnCallback( array($this, 'createClusterCallback') );
+        $mock->expects($this->any())->method('_getCluster')
+            ->will($this->returnCallback(array($this, 'createClusterCallback')));
 
         return $mock;
     }
