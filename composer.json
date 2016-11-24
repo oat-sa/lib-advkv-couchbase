@@ -1,0 +1,39 @@
+{
+	"name" : "oat-sa/lib-advkv-couchbase",
+	"description" : "Key-Value Couchebase implementation",
+	"type" : "library",
+	"authors" : [
+		{
+			"name" : "Open Assessment Technologies S.A.",
+			"homepage" : "http://www.taotesting.com"
+		}
+	],
+	"support": {
+		"forum": "http://forum.taotesting.com",
+		"issues": "http://forge.taotesting.com"
+	},
+	"keywords" : [
+		"tao",
+		"oat",
+		"couchbase",
+		"computer-based-assessment"
+	],
+	"homepage" : "http://www.taotesting.com",
+	"license" : [
+		"GPL-2.0"
+	],
+	"require" : {
+		"php" : ">=5.3.2"
+	},
+	"minimum-stability" : "dev",
+	"autoload" : {
+		"psr-4" : {
+			"oat\\couchbase\\" : "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"couchbasetest\\": "test"
+		}
+	}
+}
